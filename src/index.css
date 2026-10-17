@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Primary Light, Warm, Premium Canvas & Surface System */
+  --color-sentinel-bg: #F5F1DF;
+  --color-sentinel-brand: #DFD7AC;
+  --color-sentinel-surface: #FAF8EF;
+  --color-sentinel-card: #FFFFFF;
+  --color-sentinel-border: #D8D3BC;
+  --color-sentinel-border-light: rgba(216, 211, 188, 0.6);
+
+  /* Typographic Hierarchy */
+  --color-sentinel-primary: #20231F;
+  --color-sentinel-secondary: #42473F;
+  --color-sentinel-muted: #62665D;
+
+  /* Primary Accent (Muted Forest Olive Accent) */
+  --color-sentinel-accent: #536B4F;
+  --color-sentinel-accent-hover: #435840;
+  --color-sentinel-accent-light: #6A8665;
+
+  /* Semantic Severity System */
+  --color-sentinel-success: #4F8061;
+  --color-sentinel-warning: #B68A3E;
+  --color-sentinel-danger: #B65353;
+  --color-sentinel-critical: #A83F47;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color-scheme: light;
+}
+
+body {
+  background-color: #F5F1DF;
+  color: #20231F;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F1DF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D3BC;
+  border-radius: 3px;
+  border: 1px solid #C4BEA5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BEA5;
+}
+
+/* Theme Mappings for Light, Warm, Premium Palette */
+.bg-\[\#080B0A\] {
+  background-color: #F5F1DF !important;
+}
+.bg-\[\#080B0A\]\/90 {
+  background-color: rgba(245, 241, 223, 0.94) !important;
+}
+.bg-\[\#0D1210\] {
+  background-color: #FAF8EF !important;
+}
+.bg-\[\#121916\] {
+  background-color: #FFFFFF !important;
+}
+.bg-\[\#121916\]\/60 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+.bg-\[\#17201B\] {
+  background-color: #FAF8EF !important;
+}
+.border-\[\#25322B\] {
+  border-color: #D8D3BC !important;
+}
+.text-\[\#F5F7F6\] {
+  color: #20231F !important;
+}
+.text-\[\#A5B0AA\] {
+  color: #42473F !important;
+}
+.text-\[\#68756E\] {
+  color: #62665D !important;
+}
+
+/* Accent overrides for buttons with #147A55 or #1B9A6A */
+.bg-\[\#147A55\] {
+  background-color: #536B4F !important;
+}
+.hover\:bg-\[\#1B9A6A\]:hover {
+  background-color: #435840 !important;
+}
+.hover\:bg-\[\#147A55\]:hover {
+  background-color: #435840 !important;
+}
+.text-\[\#147A55\], .text-\[\#1B9A6A\] {
+  color: #536B4F !important;
+}
+.border-\[\#147A55\] {
+  border-color: #536B4F !important;
+}
+
+/* High-Contrast Interactive & Focus Overrides */
+.hover\:bg-\[\#121916\]:hover {
+  background-color: #FFFFFF !important;
+}
+.hover\:bg-\[\#17201B\]:hover {
+  background-color: #FAF8EF !important;
+}
+.hover\:text-\[\#F5F7F6\]:hover {
+  color: #20231F !important;
+}
+.hover\:border-\[\#25322B\]:hover {
+  border-color: #C4BEA5 !important;
+}
+.placeholder-\[\#68756E\]::placeholder {
+  color: #8C9287 !important;
+}
+.divide-\[\#25322B\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #D8D3BC !important;
+}
+
+/* Ensure accent action buttons retain crisp white text */
+.bg-\[\#147A55\] .text-\[\#F5F7F6\],
+.bg-\[\#147A55\].text-\[\#F5F7F6\],
+.bg-\[\#1B9A6A\] .text-\[\#F5F7F6\],
+.bg-\[\#1B9A6A\].text-\[\#F5F7F6\],
+.bg-\[\#536B4F\] {
+  color: #FFFFFF !important;
+}
+
+

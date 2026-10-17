@@ -1,0 +1,6 @@
+{
+  "name": "SENTINEL",
+  "description": "Before you trust it, scan it. Know what's hiding behind the message. Scan instantly — no account required.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

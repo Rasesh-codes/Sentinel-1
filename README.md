@@ -1,6 +1,5 @@
 # ScamShield AI — Explainable AI Safety & Fraud Prevention
 
-**Hackathon Submission for UPAI-Hackdays 2026**
 
 ---
 
